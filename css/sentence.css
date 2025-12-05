@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'policeRetro';
+    src: url('../media/Masaaki-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'policeRetro';
+}
+
+.window {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: solid rgb(0, 0, 0) 0%;
+}
+
+.headline {
+    display: inline,;
+    align-items: center;        
+    justify-content: space-between;
+    background-color: blue;
+}
+
+#url
+{
+    display: inline,;
+    align-items: center;        
+    justify-content: space-between;
+    background-color: lightblue;
+}
+
+.content {
+            flex: 1; /* prend tout l’espace restant */
+            display: flex;
+            justify-content: center; /* centre horizontalement */
+            align-items: center;     /* centre verticalement */
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            
+        }
+
+#logowindow{
+    float: right;
+    display: inline;
+}
+
+#titlewindow{
+    font-size: 0.85em;
+
+    width: 100%;
+
+    margin: 0;
+    left: 0 auto;
+}

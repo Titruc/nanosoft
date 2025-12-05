@@ -1,0 +1,174 @@
+html,
+body
+{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+}
+#titlewindow
+{
+    font-size: clamp(0.6rem, 2vw, 3.3rem); 
+}
+.headline
+{
+    width: clamp(100px, 100vw);                       /* largeur : 30% de la fenêtre */
+    height: clamp(10px, 5vh, 10vh); 
+    background-color: #D95763;
+    border: solid #C03232;
+}
+.window
+{
+    height: clamp(205px,100vh,100%);
+    width: clamp(205px,100vw,100%);
+    background-color: #D95763;
+    z-index: 9000;
+    display: flex;
+    flex-direction: column;
+
+}
+.content
+{
+    display: flex;
+    flex: 1;
+    gap: 1em;
+    
+}
+.mailcontainer {
+    width: clamp(100px, 30vw, 50%);
+    height: clamp(100px, 90vh, 100%);
+    border: solid #C03232;
+    background-color: #AC3232;
+
+    display: flex;             /* Flex pour centrer les mails */
+    flex-direction: column;    /* empiler verticalement */
+    align-items: center;       /* centrer horizontalement */
+    gap: 0.5em;                /* espace entre chaque mail */
+    padding: 0.5em;
+    overflow: hidden;
+}
+
+
+
+/* ===== Mail individuel ===== */
+.mail {
+    width: 100%;               /* prend toute la largeur du container */
+    background-color: white;
+    display: flex;
+    align-items: center;       /* centrage vertical */
+    justify-content: flex-start;
+    gap: 0.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+
+/* ===== Logo du mail ===== */
+#logomail {
+    width: clamp(30px, 3vw, 60px);
+    height: clamp(30px, 3vw, 60px);
+    background-color: aqua;
+    border: solid #00f 2px;
+    border-radius: 50%;          /* cercle parfait */
+    display: flex;
+    justify-content: center;
+    align-items: center;         /* centrage texte/logo */
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    
+}
+
+/* ===== Info mail (texte) ===== */
+.infomail {
+    display: flex;
+    flex-direction: column;      /* texte empilé verticalement */
+    justify-content: center;     /* centré verticalement par rapport au mail */
+    gap: 0.2em;                  /* petit espace entre l’envoyeur et objet */
+}
+
+.envoyeur {
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+    font-weight: bold;
+}
+
+.objectimage {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;                  /* espace entre image et texte */
+}
+
+#objectmail {
+    font-size: clamp(0.7rem, 1.2vw, 1.2rem);
+}
+
+.imagemail {
+    width: clamp(20px, 3vw, 50px);
+    height: auto;
+    image-rendering: pixelated;
+}
+
+#newmail {
+    font-size: 0.6rem;             /* taille du texte */
+    color: white;                /* couleur du texte */
+    background-color: #C03232;   /* fond bleu */
+    border: none;                /* pas de bordure */
+    border-radius: 5px;          /* coins arrondis */
+    padding: 0.5em 1em;
+    display: flex;               /* pour aligner image + texte */
+    align-items: center;
+    gap: 0.3em;                 /* espace entre image et texte */
+    cursor: pointer;
+}
+#sendmail
+ {
+    font-size: 0.6rem;             /* taille du texte */
+    color: white;                /* couleur du texte */
+    background-color: #C03232;   /* fond bleu */
+    border: none;                /* pas de bordure */
+    border-radius: 5px;          /* coins arrondis */
+    padding: 0.5em 1em;
+    display: flex;               /* pour aligner image + texte */
+    align-items: center;
+    gap: 0.3em;                 /* espace entre image et texte */
+    cursor: pointer;
+}
+#newmail:hover{
+    background-color: #D95763; 
+}
+#sendmail:hover{
+    background-color: #D95763; 
+}
+
+
+.rightpane
+{
+    background-color: white;
+    border: 0.6em solid #C03232;
+    width: clamp(10px, 70vw, 1000px);
+    visibility: hidden;
+
+}
+#entête
+{
+    font-size: clamp(0.9rem, 1.5vw, 1.8rem);
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 0;
+    margin-bottom: 0;
+
+}
+#contant
+{
+    font-size: clamp(0.8rem, 1.4vw, 1.7rem);
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.messageinfo {
+    background: #C03232;
+    color: white;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+
+}

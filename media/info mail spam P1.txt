@@ -1,0 +1,142 @@
+Absolument. Voici le contenu corrigé et reformulé, présenté dans un format txt simple pour faciliter la copie/colle.
+Plaintext
+
+## MAILS PROFESSIONNELS ET PERSONNELS
+
+---
+MAIL 1 : The First Mission (Le Boss)
+---
+From: LetimCook@nooknook.com
+Object: Your First Mission
+
+Hello Clin,
+I am sending you this nooknook to give you your first assignment: please send a nooknook to your colleagues JayneRosenberg@nooknook.com, RexSmith@nooknook.com, and DennisMarty@nooknook.com, instructing them to repair the machines.
+
+Thank you for doing this.
+
+
+---
+MAIL 2 : Try Out Waterfox (Le Pote Nerd)
+---
+From: YourFriendTheNerd@tuta.com
+Object: Try this out, man, it's incredible!
+
+Hey Clin, how are you? I'm doing well, personally.
+I'm writing to tell you that I've discovered something incredible! I think you use Corner like everyone else. I found something even better called **Waterfox**.
+
+There are no pop-ups, no notifications, no long loading times, my data is protected, and the crash issues have been resolved. As a bonus, Google can't stop you from deleting YouTube ads.
+
+
+---
+MAIL 3 : Production Issue - Machine Specs (Le Collègue)
+---
+From: Colleague@nooknook.com (Assumed)
+Object: Machine Specification Request
+
+Hello Clin Bates,
+
+We have a problem in production, and for some reason, I can't access the site that provides the machine specifications. Can you please copy the specifications for machine **03 r54FX3D** from this link so I can write an issue report?
+
+www.fratro.com/our_machines/03_r54FX3D
+
+
+---
+MAIL 4 : Libre Office Alternative (Le Pote Nerd)
+---
+From: YourFriendTheNerd@tuta.com
+Object: Free Desk™ Alternative for Reports
+
+Hello,
+
+Apparently, they're having problems paying the license for **Desk™** due to poor financial management. It just so happens that I have the perfect alternative that doesn't need any subscription. If you need to write an issue or a report while they fix this, install it.
+
+**freedesk.msi**
+
+Your best colleague
+
+
+## SPAMS ET NOTIFICATIONS
+
+---
+SPAMS (Mails Indésirables)
+---
+SPAM 1
+From: Scamcompanies@scam.com
+Object: Lose 3 Pounds Per Week with This!
+Body: Hello dear client, Try this! It's 100% safe and works for everyone. Try it for only $1000 per gram. Don't wait!
+
+SPAM 2
+From: Yournews@gmail.com
+Object: All the News You Need to Know for Today
+Body: Three scientists found how to cure all diseases in the world. The president says that the unemployment rate is now 70%. Some environmental activists saved 3 pandas.
+
+SPAM 3
+From: Taxe@scam.com
+Object: Pay Your Tax
+Body: Hello dear citizen, You need to pay the tax for the bathroom you built. We need your money.
+
+SPAM 4
+From: yourbestsubscription@scam.com
+Object: Our New Subscription
+Body: Hello, You are the lucky winner! You can get what you want for only $100,000 per week. Don't wait for this opportunity.
+
+
+---
+POP-UPS ET NOTIFICATIONS
+---
+POP-UP CORNER 1 (Confidentialité)
+Nanosoft Corner
+Thanks for choosing us. To work properly, we need to use your data. Do you want us to use your data?
+Yes / Of course
+
+POP-UP CORNER 2 (Erreur)
+Nanosoft Corner
+RAM overflow. Please try again.
+Close / Report and close
+
+POP-UP CORNER 3 (Data)
+We need this data to work. Do you want to give us this data?
+Yes / Of course
+
+POP-UP WATERFOX 1 (Logiciel)
+You can install a new nooknook device: Mailstrike. It's open-source, safe for your data, without ads, and free. Do you want to install it?
+Yes / No
+
+POP-UP SENTENCE 1 (Document)
+This sentence is protected. Do you want to edit it?
+Yes / No
+
+POP-UP SENTENCE 2 (License)
+You need to buy this license for $100 to use it. Do you want to buy it?
+Yes / No
+
+POP-UP NANOSOFT 1 (Sécurité)
+Are you sure to install this software? It might contain suspicious software.
+Yes / No
+
+POP-UP NANOSOFT 2 (Confirmation)
+Are you sure?
+Yes / No
+
+POP-UP NANOSOFT 3 (Confirmation)
+Are you really sure?
+Yes / No
+
+POP-UP NOOKNOOK (Mise à jour)
+You need an update. You can't open it now.
+Close
+
+POP-UP (Sauvegarde)
+A spam has been blocked.
+
+WARNING 1
+We need to update Nanosoft. The system will reboot.
+
+NOTIFICATION 1 (Clickbait)
+OMG Look what these incredible cats are doing...
+
+NOTIFICATION 2 (Clickbait)
+He destroyed his house and now he is homeless! Look at this!!!
+
+NOTIFICATION 3 (Message)
+You have a new message from ****...

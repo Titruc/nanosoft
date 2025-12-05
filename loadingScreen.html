@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Écran plein 3s</title>
+    <style>
+
+        #box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: red;
+            opacity: 1;
+            animation: hideBox 10s forwards;
+            z-index: 9998;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        #loadingBar {
+            position: absolute;
+
+            width: 40%;
+            height: 40%;
+            object-fit: cover;
+            animation: loadingBar 10s forwards;
+        }
+
+        #loadingWelcome {
+            position: absolute;
+
+            width: 40%;
+            height: 40%;
+            object-fit: cover;
+            animation: loadingWelcome 10s forwards;
+        }
+
+
+        @keyframes hideBox {
+            0% { opacity: 1; }
+            50% { background: red; }
+            51% { background: blue; }
+            99% { opacity: 1; }
+            100% { opacity: 0; background: blue;}
+        }
+
+        @keyframes loadingBar {
+            0% { opacity: 0; }
+            10% { opacity: 0; }
+            15% { opacity: 1; }
+            50% { opacity: 1; }
+            51% { opacity: 0; }
+            100% {opacity: 0;}
+        }
+
+        @keyframes loadingWelcome {
+            0% { opacity: 0; }
+            55% { opacity: 0; }
+            % { opacity: 1; }
+            100% {opacity: 1;}
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="box">
+        <img src="media/nyan-cat-gif-1.gif" id="loadingBar" alt="">
+        <img src="media/icon.png" id="loadingWelcome" alt="">
+    </div>
+
+</body>
+</html>

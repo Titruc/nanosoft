@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOCOL: LIBERATION</title>
+    <style>
+@font-face {
+    font-family: 'policeRetro';
+    src: url('../media/Masaaki-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+        :root {
+            --neon-green: #39ff14;
+            --dark-bg: #0a0a0a;
+            --border-color: #1b5e20;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--dark-bg); color: var(--neon-green);
+            font-family: 'policeRetro'; font-size: 1.3rem; line-height: 1.5;
+            padding: 20px; overflow-x: hidden;
+        }
+
+        body::before { /* CRT Scanlines Effect */
+            content: " "; display: block; position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255,0,0,0.06), rgba(0,255,0,0.02), rgba(0,0,255,0.06));
+            z-index: 999; background-size: 100% 2px, 3px 100%; pointer-events: none;
+        }
+
+        .container {
+            max-width: 1000px; margin: 0 auto; border: 2px solid var(--neon-green);
+            padding: 20px; box-shadow: 0 0 20px rgba(0, 255, 65, 0.2); position: relative; z-index: 1;
+        }
+
+        header { text-align: center; border-bottom: 2px dashed var(--neon-green); padding-bottom: 20px; margin-bottom: 30px; }
+
+        h1 { font-size: 3rem; text-shadow: 0 0 10px var(--neon-green); animation: flicker 3s infinite; }
+
+        .subtitle {
+            font-size: 1.5rem; background: var(--neon-green); color: black;
+            display: inline-block; padding: 2px 10px; margin-top: 10px;
+        }
+
+        .solution-block {
+            margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 20px;
+            border-left: 4px solid var(--neon-green); padding-left: 20px;
+            opacity: 0; transform: translateY(20px); transition: all 0.8s ease;
+        }
+        .solution-block.visible { opacity: 1; transform: translateY(0); }
+
+        .text-content { flex: 1; min-width: 300px; }
+
+        h2 { font-size: 2rem; margin-bottom: 15px; text-transform: uppercase; text-decoration: underline; }
+
+        .video-wrapper {
+            flex: 1; min-width: 300px; border: 4px double var(--neon-green);
+            padding: 5px; box-shadow: 0 0 15px var(--border-color); position: relative;
+        }
+
+        .video-wrapper iframe {
+            width: 100%; height: 250px; border: none; display: block;
+            filter: sepia(20%) hue-rotate(50deg) contrast(1.1); transition: filter 0.3s;
+        }
+        .video-wrapper:hover iframe { filter: none; }
+
+        .btn-link {
+            display: inline-block; margin-top: 10px; padding: 10px 20px;
+            border: 1px solid var(--neon-green); color: var(--neon-green);
+            text-decoration: none; font-weight: bold; transition: 0.3s;
+            background: rgba(0, 20, 0, 0.8);
+        }
+        .btn-link:hover { background: var(--neon-green); color: black; box-shadow: 0 0 20px var(--neon-green); }
+
+        .extra-resources {
+            margin-top: 50px; border-top: 2px dashed var(--neon-green); padding-top: 30px; text-align: center;
+        }
+        .nird-box {
+            border: 1px solid var(--neon-green); padding: 20px; margin: 20px auto; max-width: 600px; background: rgba(0,255,0,0.05);
+        }
+
+        footer { margin-top: 50px; text-align: center; font-size: 0.9rem; opacity: 0.7; }
+        footer a { color: var(--neon-green); }
+
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+            20%, 24%, 55% { opacity: 0.5; }
+        }
+        .cursor { display: inline-block; width: 10px; height: 1.4rem; background: var(--neon-green); animation: blink 1s step-end infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>> SOLUTIONS.EXE LOADED</h1>
+            <div class="subtitle">ALTERNATIVES EXIST</div>
+        </header>
+
+        <div style="margin-bottom: 40px; text-align: center;">
+            <p id="typing-text">Solutions exist:</p>
+        </div>
+
+        <section class="solution-block">
+            <div class="text-content">
+                <h2>01. THE SYSTEM</h2>
+                <p><strong>Target:</strong> Replace Windows.</p>
+                <p>Install an operating system like <strong>Linux</strong> on your computer. It is stable, secure, and won't slow down your machine over time.</p>
+                <p><em>Status: Recommended for PC survival.</em></p>
+            </div>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/2mUI3CMjmMc" title="Linux Tutorial" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="solution-block">
+            <div class="text-content">
+                <h2>02. BROWSING</h2>
+                <p><strong>Target:</strong> Escape tracking.</p>
+                <p>Install and use <strong>Firefox</strong> to browse the Internet freely. Unlike Chrome, it won't sell your history.</p>
+                <a href="https://www.youtube.com/watch?v=FXTLtPoC6Yo" target="_blank" class="btn-link">[ WATCH INSTALLATION TUTORIAL ]</a>
+            </div>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/FXTLtPoC6Yo" title="Firefox Tutorial" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="solution-block">
+            <div class="text-content">
+                <h2>03. OFFICE SUITE</h2>
+                <p><strong>Target:</strong> Stop paying to write.</p>
+                <p>Install and use <strong>LibreOffice</strong> for free. Why pay hundreds of euros?</p>
+                <p>Watch this video to discover all the free alternatives.</p>
+            </div>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/P8accXNcwjs" title="Free Alternatives" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <div class="extra-resources">
+            <h2>04. THE NETWORK</h2>
+
+            <div class="nird-box">
+                <p>Discover the <strong>NIRD</strong> website for open-source resources and tools:</p>
+                <br>
+                <a href="https://nird.forge.apps.education.fr/" target="_blank" class="btn-link">>> ACCESS NIRD DATABASE <<</a>
+            </div>
+
+            <p style="margin-top: 3rem;">
+                *If you are still not convinced, the truth is out there...<br>
+                <button onclick="alert('Video link missing in source data.')" class="btn-link" style="border-style: dashed;">[ WATCH FINAL VIDEO ]</button>
+            </p>
+        </div>
+
+        <footer>
+            <p>End of transmission.</p>
+            <p><a href="#">Credits & Hyperlinks</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple script to make sections appear on scroll (for a smoother transition)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.solution-block').forEach((block) => {
+            observer.observe(block);
+        });
+    </script>
+</body>
+</html>

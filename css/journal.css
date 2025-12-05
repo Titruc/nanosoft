@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'policeRetro';
+    src: url('../media/Masaaki-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'policeRetro';
+}

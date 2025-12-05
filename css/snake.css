@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'policeRetro';
+    src: url('../media/Masaaki-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+            background: #222;
+            color: white;
+            font-family: 'policeRetro';
+            margin: 0;
+            padding: 0;
+            height: 100vh; 
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2vh; 
+        }
+
+        /* SCORE */
+        #score {
+            font-size: 5vmin; 
+                font-family: 'policeRetro';
+            text-align: center;
+        }
+
+        /* ZONE DE JEU */
+        #game {
+            width: 80vmin;
+            height: 80vmin;
+            background: black;
+            border: 1vmin solid white; 
+            position: relative;
+            overflow: hidden; 
+        }
+
+        /* ÉLÉMENTS DU JEU */
+        .pomme {
+            width: 5%;
+            height: 5%;
+            position: absolute;
+              background: url("../media/0.png");
+              background-size: cover;
+               image-rendering: pixelated;
+        }
+
+        .snake {
+            width: 5%;
+            height: 5%;
+            position: absolute;
+              background: url("../media/1.png");
+              background-size: cover;
+               image-rendering: pixelated;
+        }
+
+        /* MESSAGE DE FIN (Remplacement de l'alert) */
+        #message {
+            height: 10vmin; /* Hauteur réservée pour éviter que ça bouge */
+            font-size: 5vmin;
+            font-family: 'policeRetro';
+            font-weight: bold;
+            color: #ff3333;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }

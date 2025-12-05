@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fenêtre default</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/windowsdefault.css" />
+    <link rel="stylesheet" type="text/css" href="css/nutnut.css" />
+    <script src="js/nooknook.js"></script>
+</head>
+<body>
+    <div class="window">
+        <div class="headline">
+            <img src="media/nooknook.png">
+            <span id="titlewindow">NookNook</span>
+            <div id="logowindow">
+                <img src="media/maximizeAll.png">
+                <img src="media/minimizeAll.png">
+                <img src="media/killHover.png">
+            </div>
+        </div>
+
+        <!-- Contenu principal : mailcontainer + rightpane -->
+        <div class="content">
+            <!-- Colonne gauche : mails -->
+            <div class="mailcontainer">
+                <!-- Bouton nouveau mail -->
+                <div class="objectimage">                    
+                    <button id="newmail">
+                        <img src="media/newmessage.png" class="imagemail"> Nouveau message
+                    </button>
+                    <button id="sendmail">
+                        <img src="media/plane.png" class="imagemail"> Envoyer message
+                    </button>
+                </div>
+
+                <!-- Mail exemple -->
+                <div class="mail">
+                    <span id="logomail">JT</span>
+                    <div class="infomail">
+                        <span class="envoyeur">test</span>
+                        <div class="objectimage">
+                            <img src="media/mail.png" class="imagemail">
+                            <span id="objectmail">test</span>
+                        </div>
+                    </div>
+                </div>        
+
+                <div class="mail">
+                    <span id="logomail">JT</span>
+                    <div class="infomail">
+                        <span class="envoyeur">test</span>
+                        <div class="objectimage">
+                            <img src="media/mail.png" class="imagemail">
+                            <span id="objectmail">test</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonne droite -->
+
+            <div class="rightpane">
+                <div class="mailzone">
+                    <h1 id = entête>insert your text</h1>
+                    <p id = contant>insert your text</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

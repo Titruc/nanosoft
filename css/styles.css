@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'policeRetro';
+    src: url('../media/Masaaki-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+	margin: 0;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+  background-color: #3f3f74;
+}
+
+
+.eye {
+  position: fixed;
+  top:0%;
+  width: 15%;
+  transform:rotate();
+  image-rendering: pixelated;
+  display: none;
+  left : 45%
+}
+
+.sprite-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.sprite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.wallpaper {
+    position: fixed;  /* pour qu'il reste derrière tout */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    z-index: -1;
+}
+
+main {
+  min-height: 100%;
+  min-width: 100%;
+  justify-content: space-around;
+  justify-items: stretch;
+  display: inline;
+}
+
+footer {
+  position: fixed;
+  justify-content: space-between;
+  justify-items: stretch;
+  min-width: 100%;
+  bottom: 0%;
+  background-color: #363332;
+  color: Black;
+
+}
+
+.nanosoftBar {
+  margin: 1% 1% 1% 1%;
+  width: 4%;
+  image-rendering: pixelated;
+}
+
+.nooknookBar {
+  margin: 1% 1% 1% 1%;
+  width:4%;
+  image-rendering: pixelated;
+}
+
+.nooknook {
+  margin: 1% 1% 1% 1%;
+  width:4%;
+  image-rendering: pixelated;
+  display: block;
+}
+
+.waterfox {
+  margin: 1% 1% 1% 1%;
+  width:4%;
+  image-rendering: pixelated;
+  display: block;
+
+}
+
+.mailstrike {
+  margin: 1% 1% 1% 1%;
+  width:4%;
+  image-rendering: pixelated;
+  display: block;
+
+}
+.freedesk {
+  margin: 1% 1% 1% 1%;
+  width:4%;
+  image-rendering: pixelated;
+  display: block;
+  
+}
+
+.sentenceBar {
+  margin: 1% 1% 1% 1%;
+  width:4%;
+  image-rendering: pixelated;
+  
+}
+
+.cornerBar {
+  margin: 1% 1% 1% 1%;
+  width:4%;
+  image-rendering: pixelated;
+}
+
+.sentence {
+  margin: 1% 1% 1% 1%;
+  width:4%;
+  image-rendering: pixelated;
+  display: block;
+  
+}
+
+.corner {
+  margin: 1% 1% 1% 1%;
+  width:4%;
+  image-rendering: pixelated;
+  display: block;
+}
+
+.termina {
+  margin: 1% 1% 1% 1%;
+  width: 4%;
+  image-rendering: pixelated;
+  display: block;
+}
+
+.journal {
+  float: right;
+  margin: 1% 1% 1% 1%;
+  width: 4%;
+  image-rendering: pixelated;
+  display: block;
+}
+
+.taskbar {
+  display: inline-block;
+  top : 90%;
+}
+
+#box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 1;
+  animation: hideBox 5s forwards;
+  z-index: 9998;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#loadingBar {
+  position: fixed;
+  image-rendering: pixelated;
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  animation: loadingBar 5s forwards;
+}
+
+#loadingWelcome {
+  position: fixed;
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+  animation: loadingWelcome 5s forwards;
+  color:white;
+  text-align: center;
+  font-size: 500%;
+  font-family: 'policeRetro';
+}
+
+
+@keyframes hideBox {
+    0% { opacity: 1; }
+    50% { background: black; }
+    51% { background: black; }
+    99% { opacity: 1; }
+    100% { opacity: 0; background: black;}
+}
+
+@keyframes loadingBar {
+    0% { opacity: 0; }
+    10% { opacity: 0; }
+    15% { opacity: 1; }
+    50% { opacity: 1; }
+    51% { opacity: 0; }
+    100% {opacity: 0;}
+}
+
+@keyframes loadingWelcome {
+    0% { opacity: 0; }
+    55% { opacity: 0; }
+    60% { opacity: 1; }
+    100% {opacity: 1;}
+}
+
+.window {
+    /* On définit une taille de base propre */
+    width: 60vw;   /* 60% de la largeur de l'écran */
+    height: 60vh;  /* 60% de la hauteur de l'écran */
+    
+    /* On garde tes styles existants */
+    font-size: 1.2rem;
+    padding: 0px;
+    background-color: #3f3f74; /* Ajoute une couleur de fond au cas où l'iframe charge mal */
+    border: 2px solid white;   /* Optionnel : pour faire joli style rétro */
+    
+    /* Animation d'apparition */
+    opacity: 0;
+    transform: translateY(100%); /* On fait venir du bas plutôt que translate X/Scale */
+    transition: opacity 0.7s, transform 0.7s, overlay 0.7s allow-discrete, display 0.7s allow-discrete;
+}
+
+.window:popover-open {
+    opacity: 1;
+    /* On enlève le scale(3) qui cause des problèmes de résolution et de layout */
+    transform: translateY(0%); 
+    margin: auto; /* Important pour centrer le popover natif */
+}
+
+@starting-style {
+    .window:popover-open {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+}
+/* Ajoute ceci dans styles.css */
+#windowHTML {
+    width: 100%;
+    height: 100%;
+    border: none;       /* Enlève la bordure moche style 'vieux windows' */
+    display: block;     /* Évite les petits espaces blancs en bas des éléments inline */
+    overflow: hidden;   /* Empêche les scrollbars sur l'iframe elle-même */
+}
+  
+  /* Transition for the popover's backdrop */
+  
+  .window::backdrop {
+    background-color: rgb(0 0 0 / 0%);
+    transition:
+      display 0.7s allow-discrete,
+      overlay 0.7s allow-discrete,
+      background-color 0.7s;
+    /* Equivalent to
+    transition: all 0.7s allow-discrete; */
+  }
+  
+  .window:popover-open::backdrop {
+    background-color: rgb(0 0 0 / 0%);
+  }
+  
+  /* Nesting selectors (&) cannot represent pseudo-elements, so this 
+     starting-style rule cannot be nested. */
+  
+@starting-style {
+    .window:popover-open::backdrop {
+      background-color: rgb(0 0 0 / 0%);
+    }
+}
+
+.notif {
+    font-size: 1.2rem;
+    padding: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 78%;
+    width: clamp(200px, 30vw, 400px);
+
+    transition: opacity 0.7s, transform 0.7s;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: none; 
+    will-change: opacity;
+   /* indique au navigateur de préparer le rendu */
+}
+.notif:popover-open {
+    opacity: 1;
+    overflow: auto;
+}
+  
+  /* Needs to be included after the previous .window:popover-open
+     rule to take effect, as the specificity is the same */
+@starting-style {
+    .notif:popover-open {
+      opacity: 0;
+    }
+}
+  
+  /* Transition for the popover's backdrop */
+  
+.notif::backdrop {
+  background-color: rgb(0 0 0 / 0%);
+  transition:
+  display 0.7s allow-discrete,
+  overlay 0.7s allow-discrete,
+  background-color 0.7s;
+    /* Equivalent to
+    transition: all 0.7s allow-discrete; */
+  }
+  
+.notif:popover-open::backdrop {
+    background-color: rgb(0 0 0 / 0%);
+  }
+  
+  /* Nesting selectors (&) cannot represent pseudo-elements, so this 
+     starting-style rule cannot be nested. */
+  
+@starting-style {
+.notif:popover-open::backdrop {
+      background-color: rgb(0 0 0 / 0%);
+    }
+}
+
+
+.button {
+    position: relative;
+    color: #ffffff;
+    background-color: black;
+    padding: 2% 0% 2% 0%;
+    top: 3%;
+}
+
